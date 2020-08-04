@@ -6,7 +6,7 @@ node {
     def rtMaven = Artifactory.newMavenBuild()
     def buildInfo
     
- rtMaven.tool = "maven"
+ rtMaven.tool = "BajjuGopiMaven"
 
     stage('Clone sources') {
         git url: 'https://github.com/GopinathN16616/WebApp.git'
